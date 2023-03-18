@@ -1,0 +1,283 @@
+.hero{
+    position: relative;
+    width: 115rem;
+    height: 48rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+
+    font-family: var(--ff-page);
+
+}
+
+.clouds{
+    position: absolute;
+    z-index: 999;
+
+    width: 17.6rem;
+    height: 17.6rem;
+    left: -56px;
+    top: -56px;
+}
+
+.container{
+    border-radius: 1rem;
+    background: var(--bg-cards);
+    backdrop-filter: blur(1rem);
+
+}
+
+.c-infoDay {
+    grid-row: span 2;
+    grid-column: span 2;
+    width: 54rem;
+    height: 47.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3.2rem 1.2rem 1.2rem 0;
+}
+
+.c-airQuality,
+.c-sunClock {
+    width: 27.7rem;
+    height: 24.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.c-weeksForecast{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4rem;
+    width: 58rem;
+    height: 21rem;
+
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* = = = bloco informações do dia = = = */
+.backgroundDay{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left:0;
+
+    width: 54rem;
+    height: 48rem;
+}
+
+.container-location{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    
+}
+    .container-location p{
+        color: var(--c-text-temperature);
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+.wrapped-tempNow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .wrapped-tempNow h1{
+        font-size: 8.8rem;
+        line-height: 10.6rem;
+        color: #fff;
+    }
+    .wrapped-tempNow sup{
+        position: absolute;
+        left: 10.7rem;
+        top: 1.7rem;
+
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        color: var(--c-text-primary);
+    }
+
+    .container-temp{
+        display: flex;
+        gap: .4rem;
+
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--c-text-secundary)
+    }
+    .special{
+        color: var(--c-text-temperature);
+    }
+
+.wrapped-infoDayData{
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+}
+    .container-dataTempNow{
+        width: 14.7rem;
+        height: 6rem;
+        padding: 1.2rem 1.6rem;
+
+        border-radius: .6rem;
+        background: rgba(102, 96, 200, 0.6);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        color: var(--c-text-day);
+    }
+    .title-data{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    .info{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+
+/* = = = bloco qualidade do ar = = = */
+.wrapped-qualityText{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+    .wrapped-qualityText p{
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: var(--c-text-primary);
+    }
+.wrapped-qualityIndicatorDay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+}
+    .specialQualityIndicatorText{
+        color: var(--c-text-air);
+
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 700;
+    }
+    .dayIndicator{
+        color: var(--c-text-day);
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.8rem;
+    }
+
+.wrapped-qualityData{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 24.5rem;
+    height: 3.3rem;
+
+}
+    .wrappedData{
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+        .specialQualityText{
+            color: var(--c-text-air);
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+        .qualityText{
+            color: var(--c-text-day);
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+
+        }
+
+/* = = = bloco horário do sol = = = */        
+.wrapped-textSunClock{
+    display: flex;
+    align-items: center;
+    gap: .8rem
+}
+    .wrapped-textSunClock p{
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: var(--c-text-primary);
+    }
+
+
+/* = = = bloco previsão da semana = = = */      
+
+.wrappedWeekDay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    color: var(--c-text-primary);
+}
+    .dayText{
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .wrappedIndicatorTemp{
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+    }
+        .wrappedIndicatorTemp p{
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+        }
+        .indicatorMax{
+           color: var(--c-text-secundary);
+        }
+        .indicatorMin{
+            color: var(--c-text-temperature);
+        }
+
+footer{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 2rem;
+    background: rgba(101, 96, 200, 0.12);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-family: var(--ff-page);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #fff;
+}

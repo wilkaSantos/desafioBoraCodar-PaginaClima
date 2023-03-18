@@ -1,0 +1,37 @@
+@import './index.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --ff-page: 'Lato', sans-serif;
+
+    --bg-container: #6D67D0;
+    --bg-cards: #6D67D0;
+
+    --c-text-primary: #DAD8F7;
+    --c-text-secundary: #ffffff;
+
+    --c-text-air: #87EBCD;
+    --c-text-day: #E7E6FB;
+    --c-text-temperature: #C2BFF4;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/background-page.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

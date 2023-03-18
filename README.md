@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Desenvolver o layout de uma página de clima, onde apresenta a temperatura do dia juntamente com a localização, o gráfico de horário do sol, qualidade do ar e a previsão da semana.
 
-- [Visite o projeto]()
+- [Visite o projeto](https://wilkasantos.github.io/desafioBoraCodar-PaginaClima/)
 
 <br>
 ## 🔖 Layout
